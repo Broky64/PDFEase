@@ -3,26 +3,50 @@
 	text-decoration: none;
 }
 
+body {
+	display: flex;
+	height: 100vh;
+	margin: 0px;
+}
+
 #toolbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 16px;
-  background-color: #333;
+	width: 150px;
+	height: 100vh;
+	background-color: #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	border: 1px solid #666;
+	border-bottom: none;
+	flex: 1;
+	display: flex;
+	padding-left: 12px;
+	align-items: center;
+}
+
+li:last-child {
+	border-bottom: 1px solid #666;
 }
 
 #drop-zone {
-	border: 2px dashed #555555;
+	flex-grow: 1;
+	width: 20vw;
+	height: 40vh;
+	border: 2px dashed #666;
 	border-radius: 5px;
 	padding: 32px;
 	text-align: center;
 	cursor: pointer;
-	position: relative;
-	width: 20vw;
-	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	margin: 24px;
 }
 
 .drop-zone__label {
