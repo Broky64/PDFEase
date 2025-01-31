@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Manager</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <title>PDF Manager</title>
 </head>
 <body>
-    <h1>Welcome to PDF Manager</h1>
-    <p>Let's start building your app!</p>
-    <script src="renderer.js"></script>
-</body>
+    <div id="toolbar">
+        <li>
+          <a href="./index.html">Accueil</a>
+          <li>
+            <a href="./split.html">Split PDF</a>
+          </li>
+          <li>
+            <a href="./merge.html">Merge PDF</a>
+          </li>
+          <li>
+            <a href="./compress.html">Compress PDF</a>
+          </li>
+          <li>
+            <a href="./convert.html">Convert PDF</a>
+          </li>
+          <li>
+            <a href="./rotate.html">Rotate PDF</a>
+          </li>
+          <li>
+            <a href="./extract.html">Extract Pages</a>
+          </li>
+          <li>
+            <a href="./protect.html">Protect PDF</a>
+          </li>
+          <li>
+            <a href="./unlock.html">Unlock PDF</a>
+          </li>
+        </li>
+    </div>
+
+      <!--Drop files zone-->
+      <div id="drop-zone">
+        <label for="file-input" class="drop-zone__label">
+          <span class="drop-zone__prompt">Drop PDF files here or click to upload</span>
+          <input type="file" id="file-input" title="Click to upload" multiple accept="application/pdf" class="drop-zone__input" />
+        </label>
+      </div>
+  
+    <script src="./renderer.js"></script>
+  </body>
+  
 </html>
